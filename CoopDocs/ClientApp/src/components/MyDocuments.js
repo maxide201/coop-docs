@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 export class MyDocuments extends Component {
 
@@ -23,6 +24,7 @@ export class MyDocuments extends Component {
         return (
             documents.map(doc =>
                 <div>
+
                     <Link to={"/editor/" + doc.id} style={{ textDecoration: "none", color: "black" }}>
                         <h3>{doc.name}</h3>
                     </Link>
@@ -39,6 +41,11 @@ export class MyDocuments extends Component {
 
         return (
             <div>
+                <Button outline color="secondary" type="button" style={{ float: "left" }}>
+                    Создать документ
+                </Button>
+                <br/>
+                <br />  
                 {contents}
             </div>
         );

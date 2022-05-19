@@ -1,0 +1,20 @@
+{
+  "name": "coopdocs",
+  "version": "1.0.0",
+  "description": "Выполнил студент группы ИКБО-01-19 Солуянов М.А.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxide201/coop-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxide201/coop-docs/issues"
+  },
+  "homepage": "https://github.com/maxide201/coop-docs#readme"
+}

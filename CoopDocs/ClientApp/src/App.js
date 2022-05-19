@@ -7,7 +7,7 @@ import { Counter } from './components/Counter';
 import { Signup } from './components/Signup';
 import { Signin } from './components/Signin';
 import { Documents } from './components/Documents';
-import { EditorPage2 } from './components/EditorPage2';
+import { EditorPage } from './components/EditorPage';
 
 import './custom.css'
 
@@ -18,12 +18,10 @@ export default class App extends Component {
     return (
       <Layout>
             <Route exact path='/' component={Home} />
-            <Route path='/counter' component={Counter} />
-            <Route path='/fetch-data' component={FetchData} />
             <Route path='/signup' component={Signup} />
             <Route path='/signin' component={Signin} />
             <Route path='/documents' component={Documents} />
-            <Route path="/editor/:id" component={EditorPage2}/>
+            <Route path="/editor/:id" component={EditorPage}/>
       </Layout>
     );
   }

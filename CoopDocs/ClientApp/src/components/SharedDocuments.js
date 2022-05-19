@@ -22,11 +22,12 @@ export class SharedDocuments extends Component {
         return (
             documents.map(doc =>
                 <div>
-                    <Link to={"/editor/" + doc.id}>
+                    <Link to={"/editor/" + doc.id} style={{ textDecoration: "none", color: "black" }}>
                         <h3>{doc.name}</h3>
                         {doc.permission == 2 ? 
-                            <h2>редактирование</h2> : <h2>чтение</h2>}
+                            "редактирование" : "чтение"}
                     </Link>
+                    <hr/>
                 </div>
             )
         );

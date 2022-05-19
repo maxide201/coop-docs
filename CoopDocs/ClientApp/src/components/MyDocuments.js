@@ -23,9 +23,10 @@ export class MyDocuments extends Component {
         return (
             documents.map(doc =>
                 <div>
-                    <Link to={"/editor/" + doc.id}>
+                    <Link to={"/editor/" + doc.id} style={{ textDecoration: "none", color: "black" }}>
                         <h3>{doc.name}</h3>
                     </Link>
+                    <hr/>
                 </div>
             )
         )
